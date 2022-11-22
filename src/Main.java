@@ -34,6 +34,18 @@ public class Main
         studentList.add(st);
         System.out.println("Student Added Successfully");
     }
+    static void viewStudent()
+    {
+        for(int i = 0; i < studentList.size(); i++)
+        {
+            System.out.println("------------------------------------------");
+            System.out.println("Student name "+ studentList.get(i).name);
+            System.out.println("Employee name "+ studentList.get(i).admissionNumber);
+            System.out.println("Employee designation "+ studentList.get(i).rollNumber);
+            System.out.println("Employee salary "+ studentList.get(i).college);
+            System.out.println("------------------------------------------");
+        }
+    }
     public static void main(String[] args)
     {
         while (true)
@@ -52,6 +64,8 @@ public class Main
             {
                 case 1:
                     addStudent();
+                case 2:
+                    viewStudent();
             }
         }
     }

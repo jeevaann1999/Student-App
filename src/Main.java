@@ -66,6 +66,21 @@ public class Main
         }
         System.out.println("No student found!!!");
     }
+    static void deleteStudent()
+    {
+        System.out.print("Enter student admission number:");
+        long code = sc.nextLong();
+        for(int i = 0; i < studentList.size(); i++)
+        {
+            if(studentList.get(i).admissionNumber == code)
+            {
+                studentList.remove(i);
+                System.out.println("Student removed successfully");
+                break;
+            }
+        }
+    }
+
     public static void main(String[] args)
     {
         while (true)
@@ -88,6 +103,8 @@ public class Main
                     viewStudent();
                 case 3:
                     searchStudent();
+                case 4:
+                    deleteStudent();
             }
         }
     }

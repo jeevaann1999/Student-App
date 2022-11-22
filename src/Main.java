@@ -39,10 +39,10 @@ public class Main
         for(int i = 0; i < studentList.size(); i++)
         {
             System.out.println("------------------------------------------");
-            System.out.println("Student name "+ studentList.get(i).name);
-            System.out.println("Employee name "+ studentList.get(i).admissionNumber);
-            System.out.println("Employee designation "+ studentList.get(i).rollNumber);
-            System.out.println("Employee salary "+ studentList.get(i).college);
+            System.out.println("Student Name "+ studentList.get(i).name);
+            System.out.println("Student Admission Number "+ studentList.get(i).admissionNumber);
+            System.out.println("Student Roll Number "+ studentList.get(i).rollNumber);
+            System.out.println("College "+ studentList.get(i).college);
             System.out.println("------------------------------------------");
         }
     }
@@ -56,10 +56,10 @@ public class Main
             if(studentList.get(i).admissionNumber==code)
             {
                 System.out.println("------------------------------------------");
-                System.out.println("Employee code "+ studentList.get(i).name);
-                System.out.println("Employee name "+ studentList.get(i).admissionNumber);
-                System.out.println("Employee designation "+ studentList.get(i).rollNumber);
-                System.out.println("Employee salary "+ studentList.get(i).college);
+                System.out.println("Student Name "+ studentList.get(i).name);
+                System.out.println("Student Admisssion Number "+ studentList.get(i).admissionNumber);
+                System.out.println("Student Roll Number "+ studentList.get(i).rollNumber);
+                System.out.println("College "+ studentList.get(i).college);
                 System.out.println("------------------------------------------");
                 break;
             }

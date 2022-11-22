@@ -63,8 +63,11 @@ public class Main
                 System.out.println("------------------------------------------");
                 break;
             }
+            else{
+                System.out.println("No student found");
+            }
         }
-        System.out.println("No student found!!!");
+
     }
     static void deleteStudent()
     {

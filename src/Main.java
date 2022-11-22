@@ -1,9 +1,39 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
+
+class Student
+{
+    String name;
+    long admissionNumber;
+    int rollNumber;
+    String college;
+    public Student(String name, long admissionNumber, int rollNumber, String college)
+    {
+        this.name = name;
+        this.admissionNumber = admissionNumber;
+        this.rollNumber = rollNumber;
+        this.college = college;
+    }
+}
 public class Main
 {
     static Scanner sc = new Scanner(System.in);
-
+    static ArrayList<Student> studentList = new ArrayList<Student>();
+    static void addStudent()
+    {
+        System.out.print("Enter Student Name:");
+        String name = sc.next();
+        System.out.print("Enter Admission Number:");
+        long admissionNumber = sc.nextLong();
+        System.out.print("Enter Roll Number:");
+        int rollNumber = sc.nextInt();
+        System.out.print("Enter College:");
+        String college = sc.next();
+        Student st = new Student(name, admissionNumber, rollNumber, college);
+        studentList.add(st);
+        System.out.println("Student Added Successfully");
+    }
     public static void main(String[] args)
     {
         while (true)
@@ -17,6 +47,12 @@ public class Main
             System.out.println("----------------------------------------------");
             System.out.print("\nPlease enter the choice: ");
             int choice = sc.nextInt();
+
+            switch (choice)
+            {
+                case 1:
+                    addStudent();
+            }
         }
     }
 }
